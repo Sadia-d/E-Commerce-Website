@@ -1,6 +1,4 @@
 import { Link } from "react-router";
-import Product from "./Product";
-
 
 
 const NewArrival = ({product}) => {
@@ -12,8 +10,9 @@ const NewArrival = ({product}) => {
             <div className="card bg-base-100 w-96 shadow-2xl">
                 <figure>
                     <img
+                    className="h-36"
                         src={image}
-                        alt="Shoes" />
+                        />
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title">{title}</h2>

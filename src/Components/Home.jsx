@@ -13,13 +13,13 @@ const Home = () => {
         navigate('/arrivals')
     }
 
-    const productData = useLoaderData() || [] ;
+    const productData = useLoaderData() ;
     
     const [filterCategory, setFilterCategory] = useState("All");
     console.log(filterCategory);
     
 
-    const filterProducts = productData .filter(data => {
+    const filterProducts = productData.filter(data => {
         if (filterCategory === "All") return true;
 
         if (filterCategory === "Men" && data.category.toLowerCase().includes("mens")) return true;

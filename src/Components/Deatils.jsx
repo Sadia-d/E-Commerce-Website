@@ -14,12 +14,12 @@ const Deatils = () => {
 
     return (
         <div className='container mx-auto px-4 py-8 '>
-           <div className='mb-8 p-2.5 inline-block bg-zinc-200'>
+           {/* <div className='mb-8 p-2.5 inline-block bg-zinc-200'>
             <Link to="/">Go to back</Link>
-           </div>
+           </div> */}
 
-           <div className='grid md:grid-cols-2 grid-cols-1'>
-            <div className='shadow-md rounded w-[600px]'>
+           <div className='grid md:grid-cols-2 grid-cols-1 bg-amber-100'>
+            <div className='shadow-md rounded '>
                     <img src={product.image} alt="" />
             </div>
             <div>
