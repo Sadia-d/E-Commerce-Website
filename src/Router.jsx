@@ -4,7 +4,8 @@ import Home from "./Components/Home";
 import NewArrivals from "./Components/NewArrivals";
 import Collections from "./Pages/Collections";
 import Contact from "./Pages/Contact";
-import Deatils from "./Components/Deatils";
+import Details from "./Components/Details";
+
 
 
 export const router = createBrowserRouter([
@@ -12,12 +13,12 @@ export const router = createBrowserRouter([
     path: "/",
     element: <RootLayout></RootLayout>,
     children:[
+        // {
+        //     index:true ,
+        //     element :<Home></Home>,     
+        // },
         {
-            index:true ,
-            element :<Home></Home>,     
-        },
-        {
-          path:'/home',
+          path:'/',
           element:<Home></Home>,
            loader: ()=> fetch('products.json')
         },
@@ -28,9 +29,16 @@ export const router = createBrowserRouter([
         },
         {
           path:'/details/:id',
-          element:<Deatils></Deatils>,
-           loader: ()=> fetch('products.json')
+          element:<Details></Details>,
+         loader: async ({ params }) => {
+                    const pid = parseInt(params.id)
+                    const data = await fetch('products.json'); 
+                    const res = await data.json(); 
+                    const product = res.find((prod) => prod.id === pid)
+                    return product
+         }
         },
+       
         {
           path:'/collections',
           element:<Collections></Collections>,
@@ -38,7 +46,7 @@ export const router = createBrowserRouter([
         },
         {
           path:'/contact',
-          element:<Contact></Contact>
+          element:<Contact></Contact>,
         },
     ]
   },

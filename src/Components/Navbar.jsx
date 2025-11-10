@@ -24,7 +24,7 @@ const Navbar = () => {
     // },[])
 
     const navlink = <div className=" flex  md:flex-row flex-col justify-center gap-5 font-medium">
-        <NavLink className={({isActive}) => isActive ? 'text-[#D4AF37]' : 'hover:text-[#ebd797]'} to={'/home'} >Home</NavLink>
+        <NavLink className={({isActive}) => isActive ? 'text-[#D4AF37]' : 'hover:text-[#ebd797]'} to={'/'} >Home</NavLink>
 
         <NavLink className={({isActive}) => isActive ? 'text-[#D4AF37]' : 'hover:text-[#ebd797]'} to={'/arrivals'} >New Arrivals</NavLink>
 

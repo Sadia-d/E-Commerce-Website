@@ -20,7 +20,7 @@ const NewArrival = ({product}) => {
                     <hr />
                     <div className="flex">
                        <p>Price :${price} </p>
-                     <Link to={`/details/${id}`} >Details</Link>
+                     <Link to={`/details/${id}`} ><button>Details</button></Link>
                     </div>
                 </div>
             </div>

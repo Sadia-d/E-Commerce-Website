@@ -16,10 +16,10 @@ const Home = () => {
     const productData = useLoaderData() ;
     
     const [filterCategory, setFilterCategory] = useState("All");
-    console.log(filterCategory);
+    
     
 
-    const filterProducts = productData.filter(data => {
+    const filterProducts = productData?.filter(data => {
         if (filterCategory === "All") return true;
 
         if (filterCategory === "Men" && data.category.toLowerCase().includes("mens")) return true;
@@ -33,6 +33,7 @@ const Home = () => {
 
     const displayProducts = filterProducts.slice(0, 5)
 
+    
 
     return (
         <section>
@@ -61,7 +62,7 @@ const Home = () => {
 
             <div className='flex justify-center gap-7 mt-11'>
                 {
-                    categories.map((category, idx) => (
+                    categories?.map((category, idx) => (
                         <button key={idx} onClick={() => setFilterCategory(category)} className='btn btn-outline ' >{category}</button>
                     ))
                 }
@@ -74,7 +75,7 @@ const Home = () => {
             <div>
                 <div className='grid grid-cols-3 gap-4 mt-10'>
                     {
-                        displayProducts.map(product => <Product
+                        displayProducts?.map(product => <Product
                             key={product.id}
                             product={product}></Product>)
                     }
