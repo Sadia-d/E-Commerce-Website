@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { Link } from 'react-router';
+import { AppContext } from '../Context/AppContext';
 
 const Summer = ({data}) => {
+
+    const {addToCart } = useContext(AppContext);
+
+    const handleAddtoCart =() =>{
+        addToCart(data)
+    }
+
      const {image ,title ,description ,price,category,rating} = data
     return (
        <div className='mt-16'>
@@ -21,7 +30,7 @@ const Summer = ({data}) => {
                     </div>
                         <hr />
                   <div className='mt-2 w-full'>
-                      <button className='btn bg-[#5586be]'>Add to cart</button>
+                      <Link to={'/cart'}><button onClick={handleAddtoCart} className='btn bg-[#5586be]'>Add to cart</button></Link>
                   </div>
                 </div>
             </div>

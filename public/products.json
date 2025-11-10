@@ -9,7 +9,8 @@
     "image": "https://i.ibb.co.com/M5fdSJX0/ai-generated-beautiful-women-dress-isolated-on-transparent-background-free-png.png",
     "sizes": ["S","M","L"],
     "colors": ["Red","Yellow","Green"],
-    "stock": 8
+    "stock": 8,
+      "cartQuantity" : 0
   },
   {
     "id": 2,
@@ -21,7 +22,8 @@
     "image": "https://i.ibb.co.com/pvKWH7Y8/beautiful-men-fashion-shirt.jpg",
     "sizes": ["S","M","L","XL"],
     "colors": ["Blue","White","Black"],
-    "stock": 12
+    "stock": 12,
+      "cartQuantity" : 0
   },
   
   {
@@ -34,7 +36,8 @@
     "image": "https://i.ibb.co.com/Zp64B4LG/images.jpg",
     "sizes": ["2Y","4Y","6Y","8Y"],
     "colors": ["Blue","Pink","Yellow"],
-    "stock": 20
+    "stock": 20,
+      "cartQuantity" : 0
   },
   {
     "id": 4,
@@ -46,7 +49,8 @@
     "image": "https://i.ibb.co.com/5hfbvk5n/white-long-sleeve-dress-shirt-buttoned-formal-shirt-on-transparent-background-apparel-garment-presen.webp",
     "sizes": ["M","L","XL","XXL"],
     "colors": ["White","Black","Gray"],
-    "stock": 15
+    "stock": 15,
+      "cartQuantity" : 0
   },
   {
     "id": 5,
@@ -58,7 +62,8 @@
     "image": "https://i.ibb.co.com/GQTNn5fC/elegant-mermaid-style-formal-dress-for-women-featuring-sweetheart-neckline-and-flowing-draped-fabric.png",
     "sizes": ["S","M","L"],
     "colors": ["Black","Red","Purple"],
-    "stock": 5
+    "stock": 5,
+      "cartQuantity" : 0
   },
   {
     "id": 6,
@@ -70,7 +75,8 @@
     "image": "https://i.ibb.co.com/WWzdSyBt/images.jpg",
     "sizes": ["2Y","4Y","6Y","8Y"],
     "colors": ["Blue","Green","Red"],
-    "stock": 18
+    "stock": 18,
+      "cartQuantity" : 0
   },
   {
     "id": 7,
@@ -82,7 +88,8 @@
     "image": "https://i.ibb.co.com/8nN38zpm/images-1.jpg",
     "sizes": ["M","L","XL","XXL"],
     "colors": ["Blue","Black"],
-    "stock": 14
+    "stock": 14,
+      "cartQuantity" : 0
   },
   {
     "id": 8,
@@ -94,7 +101,8 @@
     "image": "https://i.ibb.co.com/8D9W7sPV/pngtree-trendy-jeans-crop-top-png-image-5684261.png",
     "sizes": ["S","M","L"],
     "colors": ["White","Pink","Yellow"],
-    "stock": 10
+    "stock": 10,
+      "cartQuantity" : 0
   },
   {
     "id": 9,
@@ -106,7 +114,8 @@
     "image": "https://images.unsplash.com/photo-1600181957455-7b936dbd07b8",
     "sizes": ["2Y","4Y","6Y","8Y"],
     "colors": ["Red","Blue","Green"],
-    "stock": 22
+    "stock": 22,
+      "cartQuantity" : 0
   },
   {
     "id": 10,
@@ -118,7 +127,8 @@
     "image": "https://images.unsplash.com/photo-1618354698419-4463a87b3d97",
     "sizes": ["M","L","XL","XXL"],
     "colors": ["Gray","Black","Blue"],
-    "stock": 9
+    "stock": 9,
+      "cartQuantity" : 0
   },
   {
     "id": 11,
@@ -130,7 +140,8 @@
     "image": "https://images.unsplash.com/photo-1614413892384-f41fbb2d6e57",
     "sizes": ["S","M","L"],
     "colors": ["Red","Black","Blue"],
-    "stock": 7
+    "stock": 7,
+      "cartQuantity" : 0
   },
   {
     "id": 12,
@@ -142,7 +153,8 @@
     "image": "https://i.ibb.co.com/0js2PWDT/png-clipart-sweater-pink-winter-autumn-fall-and-winter-clothes-for-girls-baby-sweater-child-winter-t.png",
     "sizes": ["2Y","4Y","6Y","8Y"],
     "colors": ["Blue","Pink","Gray"],
-    "stock": 16
+    "stock": 16,
+      "cartQuantity" : 0
   },
   {
     "id": 13,
@@ -154,7 +166,8 @@
     "image": "https://images.unsplash.com/photo-1618354698419-4463a87b3d97",
     "sizes": ["M","L","XL","XXL"],
     "colors": ["White","Blue","Black"],
-    "stock": 13
+    "stock": 13,
+      "cartQuantity" : 0
   },
   {
     "id": 14,
@@ -166,7 +179,8 @@
     "image": "https://images.unsplash.com/photo-1614413892384-f41fbb2d6e57",
     "sizes": ["S","M","L"],
     "colors": ["White","Yellow","Pink"],
-    "stock": 12
+    "stock": 12,
+      "cartQuantity" : 0
   },
   {
     "id": 15,
@@ -178,7 +192,8 @@
     "image": "https://images.unsplash.com/photo-1600181957455-7b936dbd07b8",
     "sizes": ["2Y","4Y","6Y","8Y"],
     "colors": ["Blue","Gray","Green"],
-    "stock": 18
+    "stock": 18,
+      "cartQuantity" : 0
   },
   {
     "id": 16,
@@ -190,7 +205,8 @@
     "image": "https://images.unsplash.com/photo-1618354698419-4463a87b3d97",
     "sizes": ["M","L","XL","XXL"],
     "colors": ["Black","Brown","Gray"],
-    "stock": 8
+    "stock": 8,
+      "cartQuantity" : 0
   },
   {
     "id": 17,
@@ -202,7 +218,8 @@
     "image": "https://images.unsplash.com/photo-1614413892384-f41fbb2d6e57",
     "sizes": ["S","M","L"],
     "colors": ["Gray","Pink","Blue"],
-    "stock": 9
+    "stock": 9,
+      "cartQuantity" : 0
   },
   {
     "id": 18,
@@ -214,7 +231,8 @@
     "image": "https://images.unsplash.com/photo-1600181957455-7b936dbd07b8",
     "sizes": ["2Y","4Y","6Y","8Y"],
     "colors": ["Red","Blue","Yellow"],
-    "stock": 15
+    "stock": 15,
+      "cartQuantity" : 0
   },
   {
     "id": 19,
@@ -226,7 +244,8 @@
     "image": "https://images.unsplash.com/photo-1618354698419-4463a87b3d97",
     "sizes": ["M","L","XL","XXL"],
     "colors": ["Gray","Black","Navy"],
-    "stock": 11
+    "stock": 11,
+      "cartQuantity" : 0
   },
   {
     "id": 20,
@@ -238,7 +257,8 @@
     "image": "https://images.unsplash.com/photo-1614413892384-f41fbb2d6e57",
     "sizes": ["S","M","L"],
     "colors": ["Red","Black","Green"],
-    "stock": 6
+    "stock": 6,
+      "cartQuantity" : 0
   },
   {
     "id": 21,
@@ -250,7 +270,8 @@
     "image": "https://images.unsplash.com/photo-1590080871767-8b45c1a0a7d7",
     "sizes": ["M","L","XL"],
     "colors": ["Black","Brown"],
-    "stock": 20
+    "stock": 20,
+      "cartQuantity" : 0
   },
   {
     "id": 22,
@@ -262,7 +283,8 @@
     "image": "https://images.unsplash.com/photo-1596464716121-64f8fef8f4d5",
     "sizes": ["One Size"],
     "colors": ["Beige","White","Pink"],
-    "stock": 15
+    "stock": 15,
+      "cartQuantity" : 0
   },
   {
     "id": 23,
@@ -274,7 +296,8 @@
     "image": "https://images.unsplash.com/photo-1618354698419-65b8c3f1b1c2",
     "sizes": ["2Y","4Y","6Y","8Y"],
     "colors": ["Blue","Red","White"],
-    "stock": 25
+    "stock": 25,
+      "cartQuantity" : 0
   },
   {
     "id": 24,
@@ -286,6 +309,7 @@
     "image": "https://images.unsplash.com/photo-1614413892384-72c7f2f1e5f2",
     "sizes": ["One Size"],
     "colors": ["Red","Black","Beige"],
-    "stock": 12
+    "stock": 12,
+      "cartQuantity" : 0
   }
 ]

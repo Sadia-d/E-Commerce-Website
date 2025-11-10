@@ -5,6 +5,7 @@ import NewArrivals from "./Components/NewArrivals";
 import Collections from "./Pages/Collections";
 import Contact from "./Pages/Contact";
 import Details from "./Components/Details";
+import Cart from "./Components/Cart";
 
 
 
@@ -37,6 +38,10 @@ export const router = createBrowserRouter([
                     const product = res.find((prod) => prod.id === pid)
                     return product
          }
+        },
+        {
+            path:'/cart',
+            element:<Cart></Cart>
         },
        
         {
