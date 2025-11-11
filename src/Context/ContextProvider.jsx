@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { AppContext } from './AppContext';
 
 const ContextProvider = ({ children }) => {
@@ -53,9 +53,9 @@ const ContextProvider = ({ children }) => {
   }
 
   return (
-    <AppContext value={userInfo}>
+    <AppContext.Provider value={userInfo}>
       {children}
-    </AppContext>
+    </AppContext.Provider>
   );
 };
 

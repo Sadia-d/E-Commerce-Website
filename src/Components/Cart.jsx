@@ -1,9 +1,11 @@
-import React, { useContext } from "react";
-import { AppContext } from "../context/AppContext";
+import { useContext } from "react";
+
 import { FaTrash } from "react-icons/fa";
+import { AppContext } from "../Context/AppContext";
 
 const Cart = () => {
-  const { cart, removeFromCart, updateQuantity } = useContext(AppContext);
+  const { cart, removeFromCart, updateQuantity }
+  =useContext(AppContext);
 
   const subtotal = cart.reduce(
     (total, item) => total + item.price * item.quantity,
