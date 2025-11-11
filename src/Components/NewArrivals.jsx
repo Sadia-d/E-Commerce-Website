@@ -21,7 +21,7 @@ const NewArrivals = () => {
 
              {/* card */}
 
-             <div className='grid grid-cols-3 mt-9'>
+             <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:px-2 px-4 mt-9'>
                 {
                     productsData.map(product => <NewArrival
                     key={product.id}

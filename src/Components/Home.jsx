@@ -32,7 +32,7 @@ const Home = () => {
     const categories = ["All", "Men", "Women", "Children"]
 
     const displayProducts = filterProducts.slice(0, 5)
-
+        const populerProducts = productData?.sort((a,b) => b.ratings - a.ratings).slice(0,6)
     
 
     return (
@@ -58,6 +58,12 @@ const Home = () => {
             </div>
             {/* bannner section end*/}
 
+
+           <div className=' text-center mt-9'>
+              <h1 className='text-4xl font-bold'>Our Collection</h1>
+              <p className='mt-2  text-gray-500'>Browse through our diverse range of products to find exactly what you need.</p>
+           </div>
+
             {/* categories */}
 
             <div className='flex justify-center gap-7 mt-11'>
@@ -73,7 +79,8 @@ const Home = () => {
             {/* product */}
 
             <div>
-                <div className='grid grid-cols-3 gap-4 mt-10'>
+               
+                <div className='grid md:grid-cols-3 grid-cols-1 justify-items-center gap-4 mt-10'>
                     {
                         displayProducts?.map(product => <Product
                             key={product.id}
@@ -84,6 +91,27 @@ const Home = () => {
 
                 <div className='flex justify-center mt-4'>
                     <button onClick={handleShowNewArravals} className='btn'>See all</button>
+                </div>
+            </div>
+
+            {/* Popular */}
+
+            <div className='mt-8'>
+                 <div className='text-center'>
+                    <h1 className='text-4xl font-bold mb-2'>Popular Collection</h1>
+                <p className='mt-2 text-gray-500'>
+                    Discover our most loved products by our customers.
+                </p>
+                 </div>
+
+                <div className=' grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 justify-items-center  md:mt-9'>
+                   {
+                   populerProducts?.map((product) => <Product
+                   key={product.id}
+                   product={product}
+                   ></Product>)
+                    
+                    }
                 </div>
             </div>
 

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router';
 import Winter from '../Components/Winter';
 import Summer from '../Components/Summer';
-
+import img from '../assets/images/photo.jpeg'
 const Collections = () => {
 
     const winterData = useLoaderData();
@@ -20,19 +20,21 @@ const Collections = () => {
         <div>
             {/* banner section */}
             <div className="hero bg-base-200 min-h-[500px]">
-                <div className="hero-content flex-col lg:flex-row-reverse">
-                    <img
-                        src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-                        className="max-w-sm rounded-lg shadow-2xl"
+                <div className=" flex md:flex-row flex-col justify-center gap-8">
+                  <div>
+                      <img 
+                        src={img}
+                        className="lg:w-[480px] lg:h-[400px] rounded-lg shadow-2xl"
                     />
-                    <div>
-                        <h1 className="text-5xl font-bold">Stay Stylish All Year Round </h1>
+                  </div>
+                    <div className='mt-16'>
+                        <h1 className="text-4xl font-bold">Stay Stylish All Year Round </h1>
                         <p className="py-6">
-                            From cozy winter jackets and warm sweaters to light, breezy summer outfits,
-                            explore our seasonal collections designed to keep you comfortable and fashionable no matter the weather.
+                            From cozy winter jackets and warm sweaters to light, breezy summer outfits,<br />
+                            explore our seasonal collections designed to keep you comfortable and fashionable <br /> no matter  the weather.
                             Refresh your wardrobe with the latest trends for every season.
                         </p>
-                        <button className="btn btn-primary">Get Started</button>
+                       
                     </div>
                 </div>
             </div>
