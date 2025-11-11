@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router';
 import Winter from '../Components/Winter';
 import Summer from '../Components/Summer';

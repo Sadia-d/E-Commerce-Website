@@ -78,7 +78,7 @@ const Navbar = () => {
                         )}
                     </Link>
                 </div>
-                    <a className="btn bg-[#5586be] text-white hover:bg-[#E07A5F]">Shop Now</a>
+                    <Link to={'/arrivals'}  className="btn bg-[#5586be] text-white hover:bg-[#E07A5F]">Shop Now</Link>
                 </div>
             </div>
 

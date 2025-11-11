@@ -7,10 +7,10 @@ const NewArrival = ({product}) => {
         <div>
           
              <div className='mt-5'>
-            <div className="card bg-base-100 w-96 shadow-2xl">
+            <div className="card bg-base-100 w-[340px] shadow-2xl">
                 <figure>
                     <img
-                    className="h-36"
+                    className="h-80 w-full "
                         src={image}
                         />
                 </figure>
