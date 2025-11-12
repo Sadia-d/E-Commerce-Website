@@ -3,12 +3,17 @@ import { useContext } from "react";
 import { FaCartShopping } from "react-icons/fa6";
 import { Link, useLoaderData } from 'react-router';
 import { AppContext } from "../Context/AppContext";
+import toast from "react-hot-toast";
 
 const Details = () => {
 
     const product = useLoaderData();
     const { addToCart } = useContext(AppContext);
 
+    const handleAddTocart = () =>{
+        addToCart(product)
+        toast.success(" Product successfully added to cart!")
+    }
 
     const { image, price, colors, ratings, title, sizes, stock, category } = product;
 
@@ -62,7 +67,7 @@ const Details = () => {
                         </div>
 
                        <div>
-                        <Link to={'/cart'}> <button onClick={() =>addToCart(product)}  className="mt-6 px-6 py-3 flex items-center gap-2 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition">
+                        <Link to={'/cart'}> <button onClick={handleAddTocart}  className="mt-6 px-6 py-3 flex items-center gap-2 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition">
                             <FaCartShopping /> Add to Cart
                         </button></Link>
                        </div>

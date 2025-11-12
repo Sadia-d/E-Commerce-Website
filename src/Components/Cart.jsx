@@ -2,11 +2,16 @@
 import { useContext } from "react";
 import { FaTrash } from "react-icons/fa";
 import { AppContext } from "../Context/AppContext";
+import { Link } from "react-router";
+import toast from "react-hot-toast";
 
 
 const Cart = () => {
   const { cart, removeFromCart, updateQuantity } = useContext(AppContext)
  
+  const handleprocess = () =>{
+    toast.success('successfully proceed to checkout ')
+  }
 
   const subtotal = cart.reduce(
     (total, item) => total + item.price * item.quantity,
@@ -14,14 +19,17 @@ const Cart = () => {
   );
 
   return (
-    <div className="min-h-screen bg-gray-50 p-10">
+    <div className="min-h-screen bg-gray-200 p-10">
       <h1 className="text-3xl font-bold mb-10 text-center">Shopping Cart</h1>
 
       <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
         {/* Left: Cart Items */}
         <div className="md:col-span-2 space-y-6">
           {cart.length === 0 ? (
-            <p className="text-center text-gray-600">Your cart is empty 🛍️</p>
+           <div className="text-center ">
+              <p className="text-center py-6 text-2xl text-gray-600">Your cart is empty 🛍️</p>
+           <Link to={'/'} className="px-8 border bg-blue-600 text-white rounded-xl text-lg py-1.5"> Continue shoping </Link>
+           </div>
           ) : (
             cart.map((item) => (
               <div
@@ -31,17 +39,27 @@ const Cart = () => {
                 <div className="flex items-center gap-5">
                   <img
                     src={item.image}
-                    alt={item.title}
+                    
                     className="w-20 h-20 object-contain rounded-lg"
                   />
                   <div>
-                    <h3 className="font-semibold text-lg">{item.title}</h3>
-                    <p className="text-gray-500">${item.price.toFixed(2)}</p>
+                    <h3 className="font-bold text-2xl">{item.title}</h3>
+                    <p className="text-gray-600 text-lg">${item.price.toFixed(2)}</p>
                   </div>
                 </div>
 
+                 <div>
+                  
+                       {item.stock <= 0 ? (
+                      <p className="text-red-600 text-xl font-semibold">Stock Out</p>
+                    ) : (
+                      <p className="text-xl text-gray-800">Stock: {item.stock}</p>
+                    )}
+                 
+                </div>
+                    
                 <div className="flex items-center gap-4">
-                  {/* Quantity buttons */}
+                  {/* Quantity */}
                   <button
                     onClick={() => updateQuantity(item.id, -1)}
                     className="px-2 py-1 border rounded"
@@ -69,7 +87,7 @@ const Cart = () => {
           )}
         </div>
 
-        {/* Right: Order Summary */}
+        {/*  Order Summary */}
         <div className="bg-white p-6 rounded-xl shadow-md h-fit">
           <h2 className="text-xl font-bold mb-6">Order Summary</h2>
           <div className="space-y-3 text-gray-700">
@@ -86,6 +104,7 @@ const Cart = () => {
           </div>
           <button
             disabled={cart.length === 0}
+              onClick={handleprocess}
             className="mt-6 w-full bg-blue-600 text-white py-3 rounded-lg font-semibold disabled:bg-gray-300"
           >
             Proceed to Checkout

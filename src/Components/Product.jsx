@@ -1,6 +1,7 @@
 import  { useContext } from 'react';
 import { Link } from 'react-router';
 import { AppContext } from '../Context/AppContext';
+import toast from 'react-hot-toast';
 
 const Product = ({ product }) => {
     // console.log(product);
@@ -10,6 +11,7 @@ const Product = ({ product }) => {
 
     const handleAddtoCart =() =>{
         addToCart(product)
+        toast.success('cart added succesfully')
     }
 
     return (

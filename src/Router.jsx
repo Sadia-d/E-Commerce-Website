@@ -6,6 +6,7 @@ import Collections from "./Pages/Collections";
 import Contact from "./Pages/Contact";
 import Details from "./Components/Details";
 import Cart from "./Components/Cart";
+import Review from "./Components/Review";
 
 
 
@@ -14,12 +15,9 @@ export const router = createBrowserRouter([
     path: "/",
     element: <RootLayout></RootLayout>,
     children:[
-        // {
-        //     index:true ,
-        //     element :<Home></Home>,     
-        // },
+        
         {
-          path:'/',
+          index:true,
           element:<Home></Home>,
            loader: ()=> fetch('products.json')
         },
@@ -42,6 +40,11 @@ export const router = createBrowserRouter([
         {
             path:'/cart',
             element:<Cart></Cart>
+        },
+       
+        {
+            path:'/review',
+            element:<Review></Review>
         },
        
         {
